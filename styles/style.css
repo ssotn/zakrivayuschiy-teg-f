@@ -16,6 +16,8 @@
 
 .page {
   min-inline-size: 320px;
+  max-inline-size:  696px;
+  margin-inline: auto;
   min-block-size: 100%;
   font-family: 'Inter', sans-serif;
   font-variation-settings: "wght" 400;
@@ -23,4 +25,30 @@
   background-color: var(--theme-background);
   background-image: var(--theme-background-image);
   background-size: cover;
+}
+
+.header {
+  margin-block: 102px;
+  background-color: var(--theme-background);
+  border: 2px solid var(--theme-color);
+}
+
+.header__logo {
+  display: block;
+  text-decoration: none;
+  margin-block-start: clamp(120px, 30%, 136px);
+  text-align: center;
+  color: var(--theme-color, #000);
+  font-family: 'Press Start 2P', sans-serif;
+  font-weight: 400;
+  font-size: clamp(3.0625rem, 1.8943rem + 4.9844vw, 4.0625rem);
+  text-transform: uppercase;
+}
+
+.header__title {
+  margin-block-start: 20px;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: clamp(0.875rem, 0.2179rem + 2.8037vw, 1.4375rem);
+  text-align: center;
+  text-transform: uppercase;
 }
