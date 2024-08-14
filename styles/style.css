@@ -19,7 +19,7 @@
   max-inline-size:  696px;
   margin-inline: auto;
   min-block-size: 100%;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--main-font);
   font-variation-settings: "wght" 400;
   color: var(--theme-color);
   background-color: var(--theme-background);
@@ -39,7 +39,7 @@
   margin-block-start: clamp(120px, 30%, 136px);
   text-align: center;
   color: inherit;
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: var(--accent-font);
   font-weight: 400;
   font-size: clamp(3.0625rem, 1.8943rem + 4.9844vw, 4.0625rem);
   text-transform: uppercase;
@@ -47,7 +47,7 @@
 
 .header__title {
   margin-block-start: 20px;
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: var(--accent-font);
   font-size: clamp(0.875rem, 0.2179rem + 2.8037vw, 1.4375rem);
   text-align: center;
   text-transform: uppercase;
@@ -75,6 +75,8 @@
 
 .theme-menu__button {  
   color: inherit;
+  font-family: var(--accent-font);
+  font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
   padding-block: 0;

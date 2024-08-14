@@ -12,6 +12,8 @@
     repeating-linear-gradient(to left, #d3d3d3 0 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    --main-font: 'Inter', sans-serif;
+    --accent-font: 'Press Start 2P', sans-serif;
 }
   
 :root.theme-dark {
@@ -21,6 +23,8 @@
     repeating-linear-gradient(to left, #000 0 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
     linear-gradient(#007f0c, #004306);
+    --main-font: 'Inter', sans-serif;
+    --accent-font: 'Press Start 2P', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,5 +35,7 @@
         repeating-linear-gradient(to left, #000 0 2px, transparent 2px 4px),
         repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
         linear-gradient(#007f0c, #004306);
+        --main-font: 'Inter', sans-serif;
+        --accent-font: 'Press Start 2P', sans-serif;
     }
 }
