@@ -21,4 +21,6 @@
   font-variation-settings: "wght" 400;
   color: var(--theme-color);
   background-color: var(--theme-background);
+  background-image: var(--theme-background-image);
+  background-size: cover;
 }

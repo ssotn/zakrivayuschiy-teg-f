@@ -8,16 +8,28 @@
 :root.theme-light {
     --theme-background: #FFF;
     --theme-color: #000;
+    --theme-background-image:
+    repeating-linear-gradient(to left, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
 }
   
 :root.theme-dark {
     --theme-background: #000;
     --theme-color: #00CC14;
+    --theme-background-image:
+    repeating-linear-gradient(to left, #000 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+    linear-gradient(#007f0c, #004306);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --theme-background: #000;
         --theme-color: #00CC14;
+        --theme-background-image:
+        repeating-linear-gradient(to left, #000 0 2px, transparent 2px 4px),
+        repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+        linear-gradient(#007f0c, #004306);
     }
 }
