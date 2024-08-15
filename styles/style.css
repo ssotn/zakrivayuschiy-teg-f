@@ -84,3 +84,70 @@
   background: none;
   border: none;
 }
+
+.card {
+  background: var(--theme-background);
+  margin-block-end: 50px;
+}
+
+.card__title {
+  border: 2px solid var(--theme-color);
+  color: var(--theme-main, #000);
+  font-family: var(--main-font);
+  font-variation-settings: "wght" 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  padding: 4px 10px;
+}
+
+.card__image {
+  border: 2px solid var(--theme-color);
+}
+
+.image {
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.card__content {
+  border: 2px solid var(--theme-color);
+}
+
+.card__text {
+  margin: 25px 25px 27px 25px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.card__like-section {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-block: 24px;
+}
+
+.button {
+  padding: 7px 17px;
+  position: relative;
+  border: 2px solid var(--theme-color);
+  background: var(--theme-background);
+  cursor: pointer;
+}
+
+.card__icon-button {
+  cursor: pointer;
+  padding: 0;
+  text-align: center;
+  border: none;
+  background: none;
+  border: 2px solid transparent;
+}
+
+.card__like-button {
+  min-inline-size: 130px;
+  margin-inline: 0 25px;
+}
+
