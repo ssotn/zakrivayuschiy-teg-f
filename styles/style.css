@@ -20,7 +20,7 @@
   margin-inline: auto;
   min-block-size: 100%;
   font-family: var(--main-font);
-  font-variation-settings: "wght" 400;
+  font-variation-settings: "wght" var(--font-wdht);
   color: var(--theme-color);
   background-color: var(--theme-background);
   background-image: var(--theme-background-image);
@@ -76,7 +76,7 @@
 .theme-menu__button {  
   color: inherit;
   font-family: var(--accent-font);
-  font-weight: 400;
+  font-weight: var(--font-wdht);
   font-size: 14px;
   text-transform: uppercase;
   padding-block: 0;
@@ -92,9 +92,9 @@
 
 .card__title {
   border: 2px solid var(--theme-color);
-  color: var(--theme-main, #000);
+  color: var(--theme-color, #000);
   font-family: var(--main-font);
-  font-variation-settings: "wght" 400;
+  font-variation-settings: "wght" var(--font-wdht);
   font-size: 18px;
   font-style: normal;
   line-height: normal;
