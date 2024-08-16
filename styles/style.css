@@ -85,6 +85,54 @@
   border: none;
 }
 
+.theme-menu__button::after {
+  content: '';
+  display: block;
+  height: 3px;
+  transform: scaleX(0);
+  background-color: var(--theme-color);
+  transition: transform 0.3s ease;
+}
+
+.theme-menu__button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.theme-menu__button:hover::after {
+  width: 100%;
+}
+
+.theme-menu__button:disabled {
+  pointer-events: none;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.theme-menu__button:disabled::before {
+  position: absolute;
+  display: inline;
+  content: "▶";
+  animation: arrow 0.5s infinite alternate ease-in-out;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+}
+
+.theme-menu__button:focus-visible {
+  outline: none;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+  transform-origin: bottom;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
+  transition: transform 0.3s;
+}
+
 .card {
   background: var(--theme-background);
   margin-block-end: 50px;
