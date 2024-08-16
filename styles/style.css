@@ -188,3 +188,49 @@
   color: var(--theme-color);
 }
 
+.dialog {
+  display: grid;
+  align-items: center;
+  grid-template-columns: min-content auto;
+  gap: 30px 20px;
+  position: fixed;
+  inset: 0;
+  padding: 30px;
+  background-color: var(--theme-background);
+  border: 2px solid var(--theme-main);
+}
+
+.dialog::backdrop {
+  background-color: rgb(0 0 0 / 75%);
+}
+
+.dialog:not([open]) {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.dialog__icon {
+  width: 39px;
+  height: 39px;
+  color: var(--theme-color);
+}
+
+.dialog__title {
+  max-inline-size: 234px;
+  color: var(--theme-color);
+  font-family: var(--accent-font);
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: var(--font-wdht);  
+  text-transform: uppercase;
+}
+
+.dialog__button {
+  grid-column: span 2;
+  color: var(--theme-color);
+}
+
+.dialog__button .button__text {
+  text-transform: uppercase;
+}
+
