@@ -103,6 +103,24 @@
 
 .card__image {
   border: 2px solid var(--theme-color);
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  top: 25px;
+  right: clamp(11px, 30%, 25px);
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+  font-family: var(--accent-font);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+@supports (text-shadow: 0 -1px var(--theme-background), 1px 0 var(--theme-background), 0 1px var(--theme-background), -1px 0 var(--theme-background)) {
+  .label {
+    text-shadow: 0 -1px var(--theme-background), 1px 0 var(--theme-background), 0 1px var(--theme-background), -1px 0 var(--theme-background);
+  }
 }
 
 .image {
