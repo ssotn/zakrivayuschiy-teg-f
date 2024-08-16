@@ -205,6 +205,42 @@
   border: 2px solid var(--theme-color);
   background: var(--theme-background);
   cursor: pointer;
+  transition: color 0.5s ease-in-out;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 2px 2px var(--theme-color);
+  transition: box-shadow 0.3s;
+}
+
+.button::after {
+  position: absolute;
+  content: '';
+  display: block;
+  inset: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--theme-color);
+  transition: width 0.5s ease-in-out;
+}
+
+.button:hover {
+  color: var(--theme-background);
+}
+
+.button:hover::after {
+  width: 100%;
+}
+
+.button__text {
+  position: relative;
+  font-family: var(--accent-font);
+  font-size: 14px;
+  font-weight: var(--normal-font);
+  line-height: 90%;  
+  z-index: 20;
+  color: inherit;
 }
 
 .card__icon-button {
