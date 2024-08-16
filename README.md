@@ -4,5 +4,7 @@
 
 **Ссылка на** [**репозиторий**](https://github.com/ssotn/zakrivayuschiy-teg-f "ссылка на репозиторий")
 
+**Ссылка на** [**опубликованную страницу**](https://ssotn.github.io/zakrivayuschiy-teg-f/ "ссылка на опубликованную страницу")
+
 ----
 
