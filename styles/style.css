@@ -138,6 +138,7 @@
 
 .card__title {
   border: 2px solid var(--theme-color);
+  border-bottom-width: 1px;
   color: var(--theme-color, #000);
   font-family: var(--main-font);
   font-weight: var(--font-wdht-bold);
@@ -150,6 +151,8 @@
 
 .card__image {
   border: 2px solid var(--theme-color);
+  border-top-width: 1px;
+  border-bottom-width: 1px;
   position: relative;
 }
 
