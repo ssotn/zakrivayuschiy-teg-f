@@ -33,7 +33,7 @@
 
 .core {
     fill: transparent;
-    transition: fill 0.3s 0.05s linear;
+    transition: fill 0.3s 0.06s linear;
 }
 
 .card__icon-button:hover .core {
