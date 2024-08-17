@@ -140,7 +140,8 @@
   border: 2px solid var(--theme-color);
   color: var(--theme-color, #000);
   font-family: var(--main-font);
-  font-variation-settings: "wght" var(--font-wdht);
+  font-weight: var(--font-wdht-bold);
+  font-variation-settings: "wght" var(--font-wdht-bold);
   font-size: 18px;
   font-style: normal;
   line-height: normal;
@@ -275,7 +276,6 @@
   cursor: pointer;
   padding: 0;
   text-align: center;
-  border: none;
   background: none;
   border: 2px solid transparent;
 }

@@ -8,7 +8,7 @@
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
     --main-font: 'Inter', sans-serif;
     --accent-font: 'Press Start 2P', sans-serif;
-    --font-wdht: "wght" 400;
-    --font-wdht-bold: "wght" 700;
+    --font-wdht: 400;
+    --font-wdht-bold: 700;
     --name: black;
 }
