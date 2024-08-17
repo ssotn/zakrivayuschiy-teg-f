@@ -269,8 +269,6 @@
   line-height: 90%;
   z-index: 20;
   color: inherit;
-  mix-blend-mode: difference;
-  color: var(--theme-color);
 }
 
 .card__icon-button {
@@ -311,7 +309,7 @@
   inset: 0;
   padding: 30px;
   background-color: var(--theme-background);
-  border: 2px solid var(--theme-main);
+  border: 2px solid var(--theme-color);
 }
 
 .dialog::backdrop {
