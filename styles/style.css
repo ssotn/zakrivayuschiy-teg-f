@@ -160,11 +160,14 @@
   font-family: var(--accent-font);
   font-size: 14px;
   text-transform: uppercase;
+  text-shadow: 0 -1px var(--theme-background), 1px 0 var(--theme-background), 0 1px var(--theme-background), -1px 0 var(--theme-background);
 }
 
-@supports (text-shadow: 0 -1px var(--theme-background), 1px 0 var(--theme-background), 0 1px var(--theme-background), -1px 0 var(--theme-background)) {
-  .label {
-    text-shadow: 0 -1px var(--theme-background), 1px 0 var(--theme-background), 0 1px var(--theme-background), -1px 0 var(--theme-background);
+@supports (text-stroke: 1px var(--theme-background)) or (-webkit-text-stroke: 1px var(--theme-background)) {
+  .img__watermark {    
+    text-stroke: 1px var(--theme-background);
+    -webkit-text-stroke: 1px var(--theme-background);
+    text-shadow: none;
   }
 }
 
