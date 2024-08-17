@@ -25,6 +25,7 @@
   background-color: var(--theme-background);
   background-image: var(--theme-background-image);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
@@ -265,9 +266,11 @@
   font-family: var(--accent-font);
   font-size: 14px;
   font-weight: var(--normal-font);
-  line-height: 90%;  
+  line-height: 90%;
   z-index: 20;
   color: inherit;
+  mix-blend-mode: difference;
+  color: var(--theme-color);
 }
 
 .card__icon-button {
