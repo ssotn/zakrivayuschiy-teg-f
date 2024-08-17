@@ -176,7 +176,7 @@
   display: block;
   inline-size: 100%;
   object-fit: cover;
-  object-position: right;
+  object-position: right 0px;
 }
 
 .image-grayscale {
