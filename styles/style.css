@@ -163,7 +163,7 @@
   top: 25px;
   right: clamp(11px, 30%, 25px);
   opacity: 0.5;
-  mix-blend-mode: hard-light;
+ /* mix-blend-mode: hard-light;*/
   font-family: var(--accent-font);
   font-size: 14px;
   text-shadow: 0 -1px var(--theme-background), 1px 0 var(--theme-background), 0 1px var(--theme-background), -1px 0 var(--theme-background);
@@ -382,5 +382,23 @@
     width: 28px;
     height: 28px;
   }
+
+  .header__theme-menu {
+    margin-block-end: 22px;
+
+  }
+
+  .header__title {
+    margin-block-start: 19px;
+  }
+
+  .theme-menu__list {
+    gap: 7px;
+  }
+
+  .label {
+    right: clamp(11px, 0%, 25px);
+  }
+  
 }
 
