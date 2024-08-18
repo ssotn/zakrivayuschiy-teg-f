@@ -74,7 +74,7 @@
   position: relative;
 }
 
-.theme-menu__button {  
+.theme-menu__button {
   color: inherit;
   font-family: var(--accent-font);
   font-weight: var(--font-wdht);
@@ -84,16 +84,18 @@
   padding-inline: 0;
   background: none;
   border: none;
-  transition: opacity 0.3s
+  transition: opacity 0.3s;
+  position: relative;
 }
 
 .theme-menu__button::after {
   content: '';
   display: block;
   height: 3px;
-  transform: scaleX(0);
   background-color: var(--theme-color);
-  transition: transform 0.3s ease;
+  transition: opacity 0.3s ease, scale 0.3s ease; /*fix focus*/
+  transform-origin: left;
+  scale: 0;  
 }
 
 .theme-menu__button:hover {
@@ -124,11 +126,11 @@
 .theme-menu__button:focus-visible {
   outline: none;
   opacity: 0.6;
-  transform-origin: bottom;
 }
 
 .theme-menu__button:focus-visible::after {
-  transform: scaleX(1);
+  opacity: 0.6;
+  scale: 1
 }
 
 .card {
@@ -164,8 +166,8 @@
   mix-blend-mode: hard-light;
   font-family: var(--accent-font);
   font-size: 14px;
-  text-transform: uppercase;
   text-shadow: 0 -1px var(--theme-background), 1px 0 var(--theme-background), 0 1px var(--theme-background), -1px 0 var(--theme-background);
+  /*fix text-transform*/
 }
 
 @supports (text-stroke: 1px var(--theme-background)) or (-webkit-text-stroke: 1px var(--theme-background)) {
@@ -229,6 +231,7 @@
   display: flex;
   justify-content: end;
   padding: 0 25px 20px;
+  margin-block-start: 25px; /*fix margin*/
 }
 
 .button {
