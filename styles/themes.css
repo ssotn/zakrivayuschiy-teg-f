@@ -16,6 +16,7 @@
     --accent-font: 'Press Start 2P', fantasy;
     --font-wdht: 400;
     --font-wdht-bold: 700;
+    --button-text: #FFF;
 }
   
 :root.theme-dark {
@@ -29,6 +30,7 @@
     --accent-font: 'Press Start 2P', fantasy;
     --font-wdht: 465;
     --font-wdht-bold: 785;
+    --button-text: #00CC14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,5 +45,6 @@
         --accent-font: 'Press Start 2P', fantasy;
         --font-wdht: 465;
         --font-wdht-bold: 785;
+        --button-text: #00CC14;
     }
 }

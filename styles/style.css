@@ -265,7 +265,7 @@
 }
 
 .button:hover {
-  color: var(--theme-background);
+  cursor: pointer;
 }
 
 .button:hover::after {
@@ -279,8 +279,11 @@
   font-weight: var(--normal-font);
   line-height: 90%;
   z-index: 20;
-  color: inherit;
+  mix-blend-mode: difference;
+  color: var(--button-text);
 }
+
+/***************/
 
 .card__icon-button {
   cursor: pointer;
