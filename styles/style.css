@@ -171,7 +171,7 @@
 }
 
 @supports (text-stroke: 1px var(--theme-background)) or (-webkit-text-stroke: 1px var(--theme-background)) {
-  .img__watermark {    
+  .label {    
     text-stroke: 1px var(--theme-background);
     -webkit-text-stroke: 1px var(--theme-background);
     text-shadow: none;
