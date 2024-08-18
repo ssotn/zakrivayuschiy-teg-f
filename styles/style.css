@@ -215,6 +215,7 @@
 
 .card__content {
   border: 2px solid var(--theme-color);
+  border-top-width: 1px;
 }
 
 .card__text {
