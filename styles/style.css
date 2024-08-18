@@ -283,8 +283,6 @@
   color: var(--button-text);
 }
 
-/***************/
-
 .card__icon-button {
   cursor: pointer;
   padding: 0;
@@ -322,9 +320,12 @@
 }
 
 .button__icon {
+  position: relative;
   width: 21px;
   height: 21px;
-  color: var(--theme-color);
+  color: var(--button-text);
+  z-index: 21;
+  mix-blend-mode: difference;
 }
 
 .dialog {
@@ -351,7 +352,6 @@
 .dialog__icon {
   width: 39px;
   height: 39px;
-  color: var(--theme-color);
 }
 
 .dialog__title {
